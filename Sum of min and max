@@ -1,0 +1,14 @@
+#include <bits/stdc++.h> 
+int sumOfMaxMin(int arr[], int n){
+	// Write your code here.
+	int m=1000000000,x=-1000000000;
+    for (int i = 0; i < n; i++){
+      if (m >= arr[i]) {
+		  m=arr[i];
+	    }
+        if (x <= arr[i]) {
+			x=arr[i];
+        }
+    }
+	return m+x;
+}
